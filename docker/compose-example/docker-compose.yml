@@ -1,0 +1,55 @@
+# Docker Compose - запуск нескольких сервисов
+# Команды:
+#   docker-compose up -d      # Запустить всё
+#   docker-compose down       # Остановить всё
+#   docker-compose logs -f    # Логи в реальном времени
+#   docker-compose ps         # Статус сервисов
+
+services:
+  # === Python API ===
+  api:
+    build: .                          # Собрать из Dockerfile в текущей папке
+    ports:
+      - "5000:5000"                    # Порт хост:контейнер
+    environment:
+      - DATABASE_URL=postgresql://user:password@db:5432/mydb
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      db:
+        condition: service_healthy     # Ждать пока БД будет готова
+      redis:
+        condition: service_started
+    restart: unless-stopped            # Автоперезапуск
+
+  # === PostgreSQL ===
+  db:
+    image: postgres:15-alpine          # Готовый образ с Docker Hub
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=mydb
+    volumes:
+      - pgdata:/var/lib/postgresql/data   # Сохранение данных
+    ports:
+      - "5432:5432"                    # Доступ снаружи (опционально)
+    healthcheck:                       # Проверка готовности
+      test: ["CMD-SHELL", "pg_isready -U user -d mydb"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  # === Redis (кэш) ===
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redisdata:/data
+    command: redis-server --appendonly yes   # Персистентность
+    restart: unless-stopped
+
+# Именованные volumes для сохранения данных
+volumes:
+  pgdata:
+  redisdata:
