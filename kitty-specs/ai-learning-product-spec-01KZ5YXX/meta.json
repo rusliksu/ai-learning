@@ -1,0 +1,15 @@
+{
+  "coordination_branch": "kitty/mission-ai-learning-product-spec-01KZ5YXX",
+  "created_at": "2026-08-04T08:41:02.900710+00:00",
+  "flattened": false,
+  "friendly_name": "ai learning product spec",
+  "mission_id": "01KZ5YXX5H74R7V7D2EV0ZJVRX",
+  "mission_number": null,
+  "mission_slug": "ai-learning-product-spec-01KZ5YXX",
+  "mission_type": "documentation",
+  "purpose_context": "This mission advances ai learning product spec on codex/ai-learning-product-spec so stakeholders can track the work from mission creation onward.",
+  "purpose_tldr": "ai learning product spec",
+  "slug": "ai-learning-product-spec-01KZ5YXX",
+  "target_branch": "codex/ai-learning-product-spec",
+  "topology": "lanes_with_coord"
+}
