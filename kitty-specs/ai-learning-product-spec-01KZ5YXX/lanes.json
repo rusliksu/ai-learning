@@ -6,11 +6,28 @@
   "target_branch": "codex/ai-learning-product-spec",
   "lanes": [
     {
+      "lane_id": "lane-a",
+      "wp_ids": [
+        "WP01"
+      ],
+      "write_scope": [
+        "docs/product-spec/README.md",
+        "docs/product-spec/templates/capability-spec.md"
+      ],
+      "predicted_surfaces": [
+        "api",
+        "artifact-rendering"
+      ],
+      "depends_on_lanes": [],
+      "parallel_group": 0
+    },
+    {
       "lane_id": "lane-b",
       "wp_ids": [
         "WP02"
       ],
       "write_scope": [
+        "docs/product-spec/capabilities/README.md",
         "docs/product-spec/capabilities/production-rag-learning-path.md"
       ],
       "predicted_surfaces": [
@@ -22,43 +39,25 @@
       "parallel_group": 1
     },
     {
-      "lane_id": "lane-a",
+      "lane_id": "lane-c",
       "wp_ids": [
-        "WP01",
         "WP03"
       ],
       "write_scope": [
-        "AGENTS.md",
-        "docs/product-spec/README.md",
-        "docs/product-spec/capabilities/README.md",
-        "docs/product-spec/templates/capability-spec.md"
+        "AGENTS.md"
       ],
       "predicted_surfaces": [
         "api",
         "artifact-rendering"
       ],
       "depends_on_lanes": [
+        "lane-a",
         "lane-b"
       ],
       "parallel_group": 2
     }
   ],
-  "computed_at": "2026-08-04T08:47:02.441061+00:00",
+  "computed_at": "2026-08-04T08:59:07.389153+00:00",
   "computed_from": "dependency_graph+ownership",
-  "planning_artifact_wps": [],
-  "collapse_report": {
-    "events": [
-      {
-        "wp_a": "WP01",
-        "wp_b": "WP03",
-        "rule": "write_scope_overlap",
-        "evidence": "overlapping globs: 'docs/product-spec/capabilities/README.md' vs 'docs/product-spec/capabilities/README.md'; WP03 depends on WP01"
-      }
-    ],
-    "total_merges": 1,
-    "independent_wps_collapsed": 0,
-    "by_rule": {
-      "write_scope_overlap": 1
-    }
-  }
+  "planning_artifact_wps": []
 }
