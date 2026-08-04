@@ -18,7 +18,7 @@ subtasks:
 - T006
 phase: Phase 3 - Governance and acceptance
 assignee: codex
-agent: codex
+agent: "codex:gpt-5:implementer-ivan:implementer"
 history: []
 agent_profile: implementer
 authoritative_surface: AGENTS.md
@@ -29,6 +29,7 @@ tags:
 - governance
 - acceptance
 - luna-worker
+shell_pid: "4040088"
 ---
 
 ## Цель
@@ -65,3 +66,4 @@ tags:
 ## Журнал работы <!-- ## Activity Log -->
 
 - 2026-08-04T08:44:31Z — codex — Запланировано; зависит от WP01 и WP02.
+- 2026-08-04T09:38:38Z – codex:gpt-5:implementer-ivan:implementer – shell_pid=4040088 – Assigned agent via action command
