@@ -1,4 +1,16 @@
 {
+  "acceptance_history": [
+    {
+      "acceptance_mode": "local",
+      "accepted_at": "2026-08-04T09:49:06.187723+00:00",
+      "accepted_by": "codex",
+      "accepted_from_commit": "906d46186e5a6ffc257c8306765a901a7a179d6d"
+    }
+  ],
+  "acceptance_mode": "local",
+  "accepted_at": "2026-08-04T09:49:06.187723+00:00",
+  "accepted_by": "codex",
+  "accepted_from_commit": "906d46186e5a6ffc257c8306765a901a7a179d6d",
   "coordination_branch": "kitty/mission-ai-learning-product-spec-01KZ5YXX",
   "created_at": "2026-08-04T08:41:02.900710+00:00",
   "documentation_state": {
