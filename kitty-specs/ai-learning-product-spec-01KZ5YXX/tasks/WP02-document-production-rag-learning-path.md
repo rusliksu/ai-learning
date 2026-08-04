@@ -17,7 +17,7 @@ subtasks:
 - T004
 phase: Phase 2 - Current-state capability
 assignee: codex
-agent: codex
+agent: "codex:gpt-5:implementer-ivan:implementer"
 history: []
 agent_profile: implementer
 authoritative_surface: docs/product-spec/capabilities/
@@ -32,6 +32,7 @@ tags:
 - product-spec
 - production-rag
 - evidence
+shell_pid: "4040088"
 ---
 
 ## Цель
@@ -68,3 +69,4 @@ embeddings/vector stores → retrieval/reranking → generation/evaluation.
 ## Журнал работы <!-- ## Activity Log -->
 
 - 2026-08-04T08:44:31Z — codex — Запланировано; зависит от WP01 и approval baseline.
+- 2026-08-04T09:29:57Z – codex:gpt-5:implementer-ivan:implementer – shell_pid=4040088 – Assigned agent via action command
