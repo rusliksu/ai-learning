@@ -1,9 +1,12 @@
 # Итоговый review миссии AI Learning
 
-**Reviewer:** `luna_worker` / reviewer-renata  
-**Дата:** 2026-08-04  
-**Baseline:** `7a5042d`  
-**Проверенный HEAD после closeout:** `b084052`  
+**Reviewer:** `luna_worker` / reviewer-renata
+
+**Дата:** 2026-08-04
+
+**Baseline:** `7a5042d`
+
+**Проверенный HEAD после closeout:** `b084052`
 **Целевая ветка:** `codex/ai-learning-product-spec`
 
 Review относится только к изолированной `codex`-ветке. Он не подтверждает
