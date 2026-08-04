@@ -1,0 +1,20 @@
+schema_version: 1.0.0
+generated_at: '2026-08-04T08:39:40Z'
+mission: documentation
+template_set: documentation-default
+languages: []
+references:
+- id: USER:PROJECT_PROFILE
+  kind: user_profile
+  title: User Project Profile
+  summary: Project-specific interview answers captured for charter compilation.
+  source_path: .kittify/charter/interview/answers.yaml
+  local_path: _LIBRARY/user-project-profile.md
+- id: TEMPLATE_SET:documentation-default
+  kind: template_set
+  title: documentation-default
+  summary: Create and maintain high-quality software documentation following
+    Write the Docs and Divio principles
+  source_path:
+    /home/openclaw/.local/share/uv/tools/spec-kitty-cli/lib/python3.12/site-packages/doctrine/missions/documentation/mission.yaml
+  local_path: _LIBRARY/template-set-documentation-default.md

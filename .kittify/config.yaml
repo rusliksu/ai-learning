@@ -1,0 +1,12 @@
+project:
+  uuid: cc87cf62-9f45-4780-8716-7a1f2e7bef30
+  slug: ai-learning
+  node_id: f1da69b66ab4
+  build_id: 022488d2-ce22-5f85-b802-520795a4c0bb
+vcs:
+  type: git
+agents:
+  available:
+  - codex
+  auto_commit: true
+  lint_on_edit: false
