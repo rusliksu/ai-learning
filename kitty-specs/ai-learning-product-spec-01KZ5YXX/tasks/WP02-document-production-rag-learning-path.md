@@ -65,6 +65,6 @@ embeddings/vector stores → retrieval/reranking → generation/evaluation.
 - [ ] FR-002/FR-003 покрыты доказуемыми current-state assertions.
 - [ ] Independent reviewer подтвердил evidence boundary.
 
-## Журнал работы
+## Журнал работы <!-- ## Activity Log -->
 
 - 2026-08-04T08:44:31Z — codex — Запланировано; зависит от WP01 и approval baseline.

@@ -66,6 +66,6 @@ current-state template.
 - [ ] Contract покрывает FR-001, FR-004–FR-006.
 - [ ] Independent reviewer подтвердил русский язык и privacy boundary.
 
-## Журнал работы
+## Журнал работы <!-- ## Activity Log -->
 
 - 2026-08-04T08:44:31Z — codex — Draft baseline подготовлен; implementation ожидает отдельного approval.
