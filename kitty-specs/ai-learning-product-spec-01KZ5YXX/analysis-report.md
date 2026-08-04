@@ -19,13 +19,13 @@ input_artifacts:
   charter:
     path: /home/openclaw/worktrees/ai-learning-product-spec-mission/.kittify/charter/charter.md
     sha256: a8e867f37078ed085e2ab075144b2ce1b170897645ed17fd473ff6964e59c8f9
-verdict: unknown
+verdict: pass
 issue_counts:
-  low:
-  critical:
-  info:
-  high:
-  medium:
+  low: 0
+  critical: 0
+  info: 0
+  high: 0
+  medium: 0
 findings: []
 ---
 
