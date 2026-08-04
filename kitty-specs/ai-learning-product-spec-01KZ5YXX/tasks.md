@@ -15,8 +15,8 @@
 | T002 | Создать русский canonical root | WP01 | [D] |
 | T003 | Добавить reusable current-state capability template | WP01 | [D] |
 | T004 | Создать capability catalog и описать production RAG learning path | WP02 | [D] |
-| T005 | Добавить delta/fold-forward/Beads gate в `AGENTS.md` | WP03 | [ ] |
-| T006 | Выполнить checks, independent review, accept и delivery handoff | WP03 | [ ] |
+| T005 | Добавить delta/fold-forward/Beads gate в `AGENTS.md` | WP03 | [D] |
+| T006 | Выполнить checks, independent review, accept и delivery handoff | WP03 | [D] |
 
 ## WP01 — Канонический product-spec contract
 
