@@ -11,7 +11,7 @@ capability `production-rag-learning-path.md`. Утверждения вывод�
 `README.md` и четырёх versioned notebook модуля 10. Notebook, data, Docker и
 Python surfaces остаются read-only evidence.
 
-## Technical Context
+## Технический контекст
 
 **Language/Version**: Markdown/UTF-8; evidence notebooks используют Python 3.12
 **Primary Dependencies**: Git, Spec Kitty 3.2.5, Beads 1.1.2, Jupyter notebook format
@@ -25,7 +25,7 @@ content assertions, независимый `luna_worker` review
 `.env`/datasets и изменения учебного кода
 **Scale/Scope**: один contract, один template, одна начальная capability, 3 WP
 
-## Charter Check
+## Проверка правил проекта
 
 - Русская проза и literal technical identifiers сохранены.
 - Current-state claims отделены от статуса «в работе» и от execution evidence.
@@ -58,9 +58,9 @@ approval, evidence и fold-forward, не дублируя полную спец�
 
 ## Порядок реализации
 
-1. Создать русский индекс, каталог и шаблон без capability claims.
-2. На основе read-only evidence описать последовательность четырёх production
-   RAG notebook и границы доказанности.
+1. Создать русский корневой индекс и шаблон без capability claims.
+2. На основе read-only evidence создать каталог и описать последовательность
+   четырёх production RAG notebook с границами доказанности.
 3. Добавить короткое governance-правило, проверить links/language/scope.
 4. Для каждого WP выполнить независимый review; затем accept, merge,
    post-merge review и retrospective.
@@ -75,13 +75,13 @@ approval, evidence и fold-forward, не дублируя полную спец�
 - Не выполнять notebook и не устанавливать зависимости.
 - Не читать `.env`, datasets или roadmap personal details.
 
-## Implementation Concern Map
+## Карта аспектов реализации
 
 ### IC-01 — Общий contract
 
 - **Назначение**: задать индекс, шаблон и правила current-state/fold-forward.
 - **Требования**: FR-001, FR-004, FR-005.
-- **Поверхности**: `docs/product-spec/README.md`, template, catalog.
+- **Поверхности**: `docs/product-spec/README.md`, template.
 - **Зависимости**: нет.
 - **Риск**: англоязычный шаблон или избыточный процесс.
 
@@ -90,7 +90,7 @@ approval, evidence и fold-forward, не дублируя полную спец�
 - **Назначение**: описать существующую последовательность notebook без ложного
   заявления о завершении или воспроизводимом выполнении.
 - **Требования**: FR-002, FR-003, FR-005.
-- **Поверхности**: одна capability; README/notebooks только evidence.
+- **Поверхности**: catalog и одна capability; README/notebooks только evidence.
 - **Зависимости**: IC-01.
 - **Риск**: смешение file existence, README status и execution evidence.
 
@@ -102,6 +102,6 @@ approval, evidence и fold-forward, не дублируя полную спец�
 - **Зависимости**: IC-01, IC-02.
 - **Риск**: выход в учебный код или datasets.
 
-## Complexity Tracking
+## Учёт сложности
 
 Нарушений charter нет.

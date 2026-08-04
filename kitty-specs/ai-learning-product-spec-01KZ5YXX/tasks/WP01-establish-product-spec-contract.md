@@ -24,12 +24,10 @@ agent_profile: implementer
 authoritative_surface: docs/product-spec/
 create_intent:
 - docs/product-spec/README.md
-- docs/product-spec/capabilities/README.md
 - docs/product-spec/templates/capability-spec.md
 execution_mode: code_change
 owned_files:
 - docs/product-spec/README.md
-- docs/product-spec/capabilities/README.md
 - docs/product-spec/templates/capability-spec.md
 tags:
 - product-spec
@@ -39,8 +37,8 @@ tags:
 
 ## Цель
 
-После explicit approval создать минимальный русский root index, capability
-catalog и reusable current-state template.
+После explicit approval создать минимальный русский root index и reusable
+current-state template.
 
 ## Обязательная работа
 
@@ -62,12 +60,12 @@ catalog и reusable current-state template.
 - Required headings, links, русский язык и lifecycle assertions проходят.
 - `git diff --check` проходит.
 
-## Definition of done
+## Критерии завершения
 
 - [ ] T001–T003 выполнены.
 - [ ] Contract покрывает FR-001, FR-004–FR-006.
 - [ ] Independent reviewer подтвердил русский язык и privacy boundary.
 
-## Activity Log
+## Журнал работы
 
 - 2026-08-04T08:44:31Z — codex — Draft baseline подготовлен; implementation ожидает отдельного approval.

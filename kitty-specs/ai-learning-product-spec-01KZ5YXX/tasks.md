@@ -12,9 +12,9 @@
 | ID | Описание | WP | Статус |
 | --- | --- | --- | --- |
 | T001 | Получить explicit approval target spec/plan/tasks baseline | WP01 | [ ] |
-| T002 | Создать русский canonical root и capability catalog | WP01 | [ ] |
+| T002 | Создать русский canonical root | WP01 | [ ] |
 | T003 | Добавить reusable current-state capability template | WP01 | [ ] |
-| T004 | Описать подтверждённый production RAG learning path | WP02 | [ ] |
+| T004 | Создать capability catalog и описать production RAG learning path | WP02 | [ ] |
 | T005 | Добавить delta/fold-forward/Beads gate в `AGENTS.md` | WP03 | [ ] |
 | T006 | Выполнить checks, independent review, accept и delivery handoff | WP03 | [ ] |
 

@@ -1,64 +1,22 @@
-# Tasks Directory
+# Рабочие пакеты миссии
 
-This directory contains work package (WP) prompt files.
+В этом каталоге находятся подробные задания для `WP01`–`WP03`. Общий порядок,
+зависимости и связь с подзадачами `T001`–`T006` зафиксированы в `../tasks.md`.
 
-## Directory Structure (v0.9.0+)
+## Формат файлов
 
-```
-tasks/
-├── WP01-setup-infrastructure.md
-├── WP02-user-authentication.md
-├── WP03-api-endpoints.md
-└── README.md
-```
+Каждый файл рабочего пакета содержит YAML frontmatter с идентификатором,
+зависимостями, требованиями, Bead и принадлежащими пакету файлами. Основной
+текст описывает цель, обязательную работу, ограничения, проверки и критерии
+завершения.
 
-All WP files are stored flat in `tasks/`. Status is tracked in `status.events.jsonl`, not in WP frontmatter.
+## Учёт статуса
 
-## Work Package File Format
+Канонический статус хранится в `../status.events.jsonl`, а не во frontmatter.
+Переходы выполняются через `spec-kitty agent tasks move-task` только после
+фактического выполнения соответствующего этапа.
 
-Each WP file **MUST** use YAML frontmatter:
+## Правило реализации
 
-```yaml
----
-work_package_id: "WP01"
-title: "Work Package Title"
-dependencies: []
-planning_base_branch: "codex/ai-learning-product-spec"
-merge_target_branch: "codex/ai-learning-product-spec"
-branch_strategy: "Planning artifacts were generated on codex/ai-learning-product-spec; completed changes must merge back into codex/ai-learning-product-spec."
-subtasks:
-  - "T001"
-  - "T002"
-phase: "Phase 1 - Setup"
-assignee: ""
-agent: ""
-shell_pid: ""
-history:
-  - timestamp: "2025-01-01T00:00:00Z"
-    agent: "system"
-    action: "Prompt generated via /spec-kitty.tasks"
----
-
-# Work Package Prompt: WP01 – Work Package Title
-
-[Content follows...]
-```
-
-## Status Tracking
-
-Status is tracked via the canonical event log (`status.events.jsonl`), not in WP frontmatter.
-Use `spec-kitty agent tasks move-task` to change WP status:
-
-```bash
-spec-kitty agent tasks move-task <WPID> --to <lane>
-```
-
-Example:
-```bash
-spec-kitty agent tasks move-task WP01 --to doing
-```
-
-## File Naming
-
-- Format: `WP01-kebab-case-slug.md`
-- Examples: `WP01-setup-infrastructure.md`, `WP02-user-auth.md`
+Эта baseline пока является планом. Реализация `docs/product-spec/` и изменение
+`AGENTS.md` начинаются только после отдельного одобрения пользователя.

@@ -22,9 +22,11 @@ history: []
 agent_profile: implementer
 authoritative_surface: docs/product-spec/capabilities/
 create_intent:
+- docs/product-spec/capabilities/README.md
 - docs/product-spec/capabilities/production-rag-learning-path.md
 execution_mode: code_change
 owned_files:
+- docs/product-spec/capabilities/README.md
 - docs/product-spec/capabilities/production-rag-learning-path.md
 tags:
 - product-spec
@@ -34,15 +36,16 @@ tags:
 
 ## Цель
 
-Описать существующий маршрут chunking → embeddings/vector stores →
-retrieval/reranking → generation/evaluation.
+Создать каталог возможностей и описать существующий маршрут chunking →
+embeddings/vector stores → retrieval/reranking → generation/evaluation.
 
 ## Обязательная работа
 
-1. Сверить claims с README и четырьмя versioned notebook.
-2. Зафиксировать назначение, порядок, пререквизиты и границы доказанности.
-3. Явно отделить file existence и README status от execution evidence.
-4. Не копировать notebook content и не объявлять модуль 10 завершённым.
+1. Создать каталог с относительной ссылкой на capability.
+2. Сверить claims с README и четырьмя versioned notebook.
+3. Зафиксировать назначение, порядок, пререквизиты и границы доказанности.
+4. Явно отделить file existence и README status от execution evidence.
+5. Не копировать notebook content и не объявлять модуль 10 завершённым.
 
 ## Ограничения
 
@@ -56,12 +59,12 @@ retrieval/reranking → generation/evaluation.
 - Capability не содержит неподтверждённых execution/production claims.
 - `git diff --check` и language assertions проходят.
 
-## Definition of done
+## Критерии завершения
 
 - [ ] T004 выполнена.
 - [ ] FR-002/FR-003 покрыты доказуемыми current-state assertions.
 - [ ] Independent reviewer подтвердил evidence boundary.
 
-## Activity Log
+## Журнал работы
 
 - 2026-08-04T08:44:31Z — codex — Запланировано; зависит от WP01 и approval baseline.

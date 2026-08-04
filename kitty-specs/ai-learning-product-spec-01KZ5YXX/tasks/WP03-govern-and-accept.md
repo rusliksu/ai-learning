@@ -22,12 +22,9 @@ agent: codex
 history: []
 agent_profile: implementer
 authoritative_surface: AGENTS.md
-create_intent:
-- docs/product-spec/capabilities/README.md
 execution_mode: code_change
 owned_files:
 - AGENTS.md
-- docs/product-spec/capabilities/README.md
 tags:
 - governance
 - acceptance
@@ -43,9 +40,8 @@ tags:
 
 1. Добавить короткий русский раздел в `AGENTS.md` о capability/delta/approval,
    evidence/fold-forward и роли Beads.
-2. Обновить каталог принятой capability.
-3. Проверить allowed paths, links, язык, frozen surfaces и privacy boundary.
-4. Провести отдельный `luna_worker` review каждого WP, accept, merge,
+2. Проверить allowed paths, links, язык, frozen surfaces и privacy boundary.
+3. Провести отдельный `luna_worker` review каждого WP, accept, merge,
    post-merge review и retrospective.
 
 ## Ограничения
@@ -56,16 +52,16 @@ tags:
 
 ## Проверка
 
-- Catalog link проходит.
+- Catalog link, созданный в WP02, проходит.
 - Frozen surfaces не изменены.
 - Все review/accept/merge artifacts сохранены.
 
-## Definition of done
+## Критерии завершения
 
 - [ ] T005–T006 выполнены.
 - [ ] FR-004–FR-006 покрыты.
 - [ ] Mission принята, слита и post-merge review завершён.
 
-## Activity Log
+## Журнал работы
 
 - 2026-08-04T08:44:31Z — codex — Запланировано; зависит от WP01 и WP02.
