@@ -23,6 +23,13 @@
 - Анализ/гайд ≠ редактирование файлов — жди явную команду
 - Windows-инструкции для локального setup по умолчанию
 
+## Продуктовая спецификация
+
+- `docs/product-spec/` — каноническое описание текущего наблюдаемого поведения; отдельные возможности ведутся как capability.
+- Material delta требует явного approval до реализации. После реализации собрать проверяемое evidence и выполнить fold-forward: обновить capability как цельное описание актуального состояния.
+- Beads хранит identity, priority и dependency graph работы, а Spec Kitty — требования, решения, критерии приёмки и lifecycle рабочих пакетов.
+- Не включать в product spec secrets, credentials, `.env`, содержимое datasets или персональные сведения.
+
 <!-- spec-kitty:orientation -->
 **Spec Kitty v3.2.5** — project: unknown (healthy)
 

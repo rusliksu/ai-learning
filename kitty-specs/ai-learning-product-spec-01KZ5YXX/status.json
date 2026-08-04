@@ -1,0 +1,42 @@
+{
+  "event_count": 21,
+  "last_event_id": "01KZ62VSN7G7F60Z9N0ZTPYH3V",
+  "materialized_at": "2026-08-04T09:49:48.071867+00:00",
+  "mission_number": "1",
+  "mission_slug": "ai-learning-product-spec-01KZ5YXX",
+  "mission_type": "documentation",
+  "summary": {
+    "approved": 0,
+    "blocked": 0,
+    "canceled": 0,
+    "claimed": 0,
+    "done": 3,
+    "for_review": 0,
+    "in_progress": 0,
+    "in_review": 0,
+    "planned": 0
+  },
+  "work_packages": {
+    "WP01": {
+      "actor": "merge",
+      "force_count": 0,
+      "lane": "done",
+      "last_event_id": "01KZ62VP0P5WKNF0KD2N34XTPN",
+      "last_transition_at": "2026-08-04T09:49:44.342292+00:00"
+    },
+    "WP02": {
+      "actor": "merge",
+      "force_count": 0,
+      "lane": "done",
+      "last_event_id": "01KZ62VR1MP6RRR81GVCTKNFWY",
+      "last_transition_at": "2026-08-04T09:49:46.420152+00:00"
+    },
+    "WP03": {
+      "actor": "merge",
+      "force_count": 0,
+      "lane": "done",
+      "last_event_id": "01KZ62VSN7G7F60Z9N0ZTPYH3V",
+      "last_transition_at": "2026-08-04T09:49:48.071867+00:00"
+    }
+  }
+}
