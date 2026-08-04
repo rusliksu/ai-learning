@@ -18,7 +18,7 @@ subtasks:
 - T003
 phase: Phase 1 - Canonical contract
 assignee: codex
-agent: codex
+agent: "codex:gpt-5:implementer-ivan:implementer"
 history: []
 agent_profile: implementer
 authoritative_surface: docs/product-spec/
@@ -33,6 +33,7 @@ tags:
 - product-spec
 - russian
 - privacy-safe
+shell_pid: "4040088"
 ---
 
 ## Цель
@@ -70,3 +71,4 @@ current-state template.
 
 - 2026-08-04T08:44:31Z — codex — Draft baseline подготовлен; implementation ожидает отдельного approval.
 - 2026-08-04T09:14:07Z – codex – 2026-08-04: пользователь явно одобрил target spec/plan/tasks baseline для реализации AI Learning.
+- 2026-08-04T09:19:28Z – codex:gpt-5:implementer-ivan:implementer – shell_pid=4040088 – Assigned agent via action command

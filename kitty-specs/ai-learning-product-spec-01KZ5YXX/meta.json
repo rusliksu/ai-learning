@@ -25,5 +25,7 @@
   "purpose_tldr": "ai learning product spec",
   "slug": "ai-learning-product-spec-01KZ5YXX",
   "target_branch": "codex/ai-learning-product-spec",
-  "topology": "lanes_with_coord"
+  "topology": "lanes_with_coord",
+  "vcs": "git",
+  "vcs_locked_at": "2026-08-04T09:19:24.541095+00:00"
 }
