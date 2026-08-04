@@ -18,7 +18,7 @@ subtasks:
 - T003
 phase: Phase 1 - Canonical contract
 assignee: codex
-agent: "codex:gpt-5:implementer-ivan:implementer"
+agent: "codex:gpt-5.6-luna:reviewer-renata:reviewer"
 history: []
 agent_profile: implementer
 authoritative_surface: docs/product-spec/
@@ -72,3 +72,5 @@ current-state template.
 - 2026-08-04T08:44:31Z — codex — Draft baseline подготовлен; implementation ожидает отдельного approval.
 - 2026-08-04T09:14:07Z – codex – 2026-08-04: пользователь явно одобрил target spec/plan/tasks baseline для реализации AI Learning.
 - 2026-08-04T09:19:28Z – codex:gpt-5:implementer-ivan:implementer – shell_pid=4040088 – Assigned agent via action command
+- 2026-08-04T09:23:34Z – codex:gpt-5:implementer-ivan:implementer – shell_pid=4040088 – Ready for review: русский root product-spec index и reusable current-state capability template; scope, links, language, lifecycle и git diff checks прошли
+- 2026-08-04T09:25:13Z – codex:gpt-5.6-luna:reviewer-renata:reviewer – shell_pid=4040088 – Started review via action command
