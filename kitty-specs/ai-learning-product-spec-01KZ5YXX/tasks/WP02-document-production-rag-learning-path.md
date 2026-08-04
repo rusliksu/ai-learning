@@ -17,7 +17,7 @@ subtasks:
 - T004
 phase: Phase 2 - Current-state capability
 assignee: codex
-agent: "codex:gpt-5:implementer-ivan:implementer"
+agent: "codex:gpt-5.6-luna:reviewer-renata:reviewer"
 history: []
 agent_profile: implementer
 authoritative_surface: docs/product-spec/capabilities/
@@ -70,3 +70,5 @@ embeddings/vector stores → retrieval/reranking → generation/evaluation.
 
 - 2026-08-04T08:44:31Z — codex — Запланировано; зависит от WP01 и approval baseline.
 - 2026-08-04T09:29:57Z – codex:gpt-5:implementer-ivan:implementer – shell_pid=4040088 – Assigned agent via action command
+- 2026-08-04T09:32:44Z – codex:gpt-5:implementer-ivan:implementer – shell_pid=4040088 – Ready for review: documented four-stage production RAG learning path with explicit README/file/execution evidence boundaries
+- 2026-08-04T09:34:51Z – codex:gpt-5.6-luna:reviewer-renata:reviewer – shell_pid=4040088 – Started review via action command
