@@ -1,0 +1,69 @@
+{
+  "mission_slug": "ai-learning-product-spec-01KZ5YXX",
+  "mission_number": "",
+  "mission_type": "documentation",
+  "overall_verdict": "pass",
+  "criteria": [
+    {
+      "criterion_id": "FR-001",
+      "description": "Русский canonical index, catalog и reusable capability template существуют и связаны относительными ссылками.",
+      "proof_type": "code_review",
+      "evidence": "luna_worker WP01 PASS; implementation 5744292; link and Russian-layer assertions PASS",
+      "pass_fail": "pass",
+      "verified_by": "luna_worker",
+      "verified_at": "2026-08-04T09:26:59Z",
+      "notes": "WP01 approved"
+    },
+    {
+      "criterion_id": "FR-002",
+      "description": "Capability production-rag-learning-path описывает существующий маршрут четырёх notebook.",
+      "proof_type": "code_review",
+      "evidence": "luna_worker WP02 PASS; implementation 08a0345; four evidence links resolved",
+      "pass_fail": "pass",
+      "verified_by": "luna_worker",
+      "verified_at": "2026-08-04T09:36:00Z",
+      "notes": "WP02 approved"
+    },
+    {
+      "criterion_id": "FR-003",
+      "description": "File existence, README status in progress и отсутствие execution evidence разделены.",
+      "proof_type": "code_review",
+      "evidence": "luna_worker WP02 PASS; no completion or production-readiness claims",
+      "pass_fail": "pass",
+      "verified_by": "luna_worker",
+      "verified_at": "2026-08-04T09:36:00Z",
+      "notes": "Notebook execution was not performed"
+    },
+    {
+      "criterion_id": "FR-004",
+      "description": "Delta → approval → evidence → fold-forward lifecycle и Bead ops-h53.2 закреплены.",
+      "proof_type": "code_review",
+      "evidence": "luna_worker WP03 PASS; implementation 5cd897e; governance assertions PASS",
+      "pass_fail": "pass",
+      "verified_by": "luna_worker",
+      "verified_at": "2026-08-04T09:44:00Z",
+      "notes": "WP03 approved"
+    },
+    {
+      "criterion_id": "FR-005",
+      "description": "Frozen и privacy-sensitive поверхности не изменены и не использованы.",
+      "proof_type": "code_review",
+      "evidence": "Integrated-scope review PASS: only AGENTS.md and four docs/product-spec files",
+      "pass_fail": "pass",
+      "verified_by": "luna_worker",
+      "verified_at": "2026-08-04T09:44:00Z",
+      "notes": "Notebook, data, Docker, Python, .env and roadmap stayed outside scope"
+    },
+    {
+      "criterion_id": "FR-006",
+      "description": "Allowed-path, link, language, git checks и независимые WP reviews пройдены.",
+      "proof_type": "code_review",
+      "evidence": "WP01-WP03 approved by luna_worker; git diff/show --check and link assertions PASS",
+      "pass_fail": "pass",
+      "verified_by": "luna_worker",
+      "verified_at": "2026-08-04T09:44:00Z",
+      "notes": "Pre-merge readiness evidence complete"
+    }
+  ],
+  "negative_invariants": []
+}
