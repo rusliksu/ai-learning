@@ -11,7 +11,7 @@
 
 | ID | Описание | WP | Статус |
 | --- | --- | --- | --- |
-| T001 | Получить explicit approval target spec/plan/tasks baseline | WP01 | [ ] |
+| T001 | Получить explicit approval target spec/plan/tasks baseline | WP01 | [D] |
 | T002 | Создать русский canonical root | WP01 | [ ] |
 | T003 | Добавить reusable current-state capability template | WP01 | [ ] |
 | T004 | Создать capability catalog и описать production RAG learning path | WP02 | [ ] |

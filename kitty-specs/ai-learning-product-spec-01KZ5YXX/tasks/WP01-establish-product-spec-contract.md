@@ -69,3 +69,4 @@ current-state template.
 ## Журнал работы <!-- ## Activity Log -->
 
 - 2026-08-04T08:44:31Z — codex — Draft baseline подготовлен; implementation ожидает отдельного approval.
+- 2026-08-04T09:14:07Z – codex – 2026-08-04: пользователь явно одобрил target spec/plan/tasks baseline для реализации AI Learning.
